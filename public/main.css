@@ -1,0 +1,224 @@
+body{
+    background:#121212;
+    /*margin-top:50px;*/
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+}
+
+#text_div {
+    display: block;
+    font-size: calc(2vw + 2vh);
+}
+
+.charts {
+    display: flex;
+}
+
+#filter_div {
+    width: 20%;
+    height: 80vh;
+    font-family: Verdana, sans-serif;
+    background: #121212;
+}
+
+.filter-container {
+    margin-bottom: 10px;
+}
+
+.search-container {
+    width: 100%;
+}
+
+#search {
+    background: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1em;
+    color: white;
+    border: 0px;
+}
+
+.checkbox-list {
+    max-height: 75vh; /* Limit height, add scroll if too long */
+    overflow-y: auto;
+    background: #121212;
+    padding: 10px;
+}
+.checkbox-item {
+    margin-bottom: 8px;
+}
+
+
+.checkbox-item label {
+    margin-left: 5px;
+}
+
+#chart_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-bottom: 0vh;
+    width: 80%; /* Remaining width */
+    max-height: 80vh; /* Limit height, add scroll if too long */
+    overflow-y: auto;
+    background: #121212;
+}
+
+#barchart_div{
+    width:100%;
+    height:50vh;
+    /*border:1px solid red;*/
+    font-size: calc(2vw + 2vh);
+    float:left;
+}
+
+.barChartBar:hover {
+    cursor: pointer;
+}
+
+.radarArea:hover {
+    cursor: pointer;
+}
+
+#radarchart_div{
+    width:100%;
+    height:10vh;
+}
+
+#title_div {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#121212;
+}
+
+#logo {
+    height: 10vh;
+    width: 10vw;
+    padding-right: 1vw;
+}
+.headline {
+    fill: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+#barchart_title {
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1vw + 1vh);
+}
+
+#detail_header {
+    font-size: calc(1vw + 1vh);
+    margin-bottom: 10em;
+}
+
+.yaxis {
+    font: calc(0.5vw + 0.7vh) "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    stroke-width: 3;
+}
+
+.legend {
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    stroke-width: 3;
+    color: white;
+    fill: white;
+}
+
+.tooltip {
+    fill: rgba(255, 255, 255, 0.7);
+    background: #121212;
+}
+
+.axislabel {
+    fill: white;
+}
+
+/* The Modal (background) */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 70%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute; /* Position it relative to the modal content */
+    top: 0.5em; /* Distance from the top edge of the modal content */
+    right: 1em; /* Distance from the right edge of the modal content */
+    border: none;
+    background: transparent;
+}
+
+.close:hover,
+.close:focus {
+    color: #f4c619;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.epCircle:hover {
+    cursor: pointer;
+}
+
+.seriesInfo, .episodeInfoDiv {
+    margin-top: 1em;
+    font-family: Verdana, sans-serif;
+    font-size: calc(0.6vw + 0.6vh);
+}
+
+.infoTitle  {
+    font-weight: bold;
+    font-size: calc(0.6vw + 0.6vh);
+    margin-right: 0.5em;
+    color: #f4c619;
+}
+.infoCategory {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+#episodeInfoTitle {
+    font-size: calc(0.7vw + 0.5vh);
+}
+
+#linechartTitles {
+    margin-top: 1em;
+    margin-bottom: -3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

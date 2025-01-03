@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IMDb Show Ratings</title>
+  <link href="./public/main.css" rel="stylesheet">
+  <script type="module" src="public/myD3app.js"></script>
+
+</head>
+<body>
+  <div id="text_div">
+    <div id="title_div"></div>
+  </div>
+  <div class="charts">
+    <div id="filter_div">
+      <div class="search-container">
+        <input
+                type="text"
+                id="search"
+                placeholder="Search TV shows"
+        />
+      </div>
+      <div class="checkbox-list" id="checkboxList">
+        <div class="checkbox-item">
+          <input type="checkbox" id="checkAll" />
+          <label for="checkAll"><strong>Check All</strong></label>
+        </div>
+        <!-- Checkboxes will be dynamically inserted here -->
+      </div>
+    </div>
+    <div id="chart_container">
+      <div id="barchart_title"></div>
+      <div id="barchart_div"></div>
+      <div id="radarchart_div">
+        <div class="radarChart"></div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" id="modal_window">
+<!--      <span class="close">&times;</span>-->
+      <span class="close">&times;</span>
+      <div id="linechart_div">
+      </div>
+    </div>
+
+  </div>
+</body>
