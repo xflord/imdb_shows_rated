@@ -316,7 +316,6 @@ function formatShowDataForRadar(shows) {
             let worstEpRating = show.Episodes.reduce((min, episode) => Math.min(min, episode.imdbRating === "N/A" ? 10 : Number(episode.imdbRating)), Infinity)
             let showRating = show.imdbRating;
             let numberOfEpisodes = show.Episodes.filter((ep) => !isNaN(ep.imdbRating)).length;
-            console.log(numberOfEpisodes);
 
             let averageEpRating = show.Episodes.reduce((sum, episode) => sum + (isNaN(episode.imdbRating) ? 0 : Number(episode.imdbRating)), 0) / numberOfEpisodes;
             data.push(
