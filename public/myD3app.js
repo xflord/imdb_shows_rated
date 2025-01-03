@@ -21,10 +21,10 @@ var textArea;
 var barChartArea;
 let previousBarWidth;
 
-d3.json('public/series.json')
+d3.json('./public/series.json')
     .then(function(data) {
         seriesData = data;
-        d3.json('public/episodes.json')
+        d3.json('./public/episodes.json')
             .then(function(data) {
                 episodesData = data;
 
